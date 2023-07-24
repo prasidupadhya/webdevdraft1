@@ -1,0 +1,58 @@
+/* MAKE SURE THAT THIS IS AT THE BEGINNING OF YOUR CSS DON'T CHANGE ANYTHING */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    border-radius: 25px; /* Round boxes for the navigation links */
+    margin: 5px; /* Add space between the round boxes */
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+/* Active link */
+.navbar a.active {
+    background-color: #534caf;
+    color: white;
+}
+
+/* Box shadow for the navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* MAKE SURE THAT THIS IS AT THE BEGINNING OF YOUR CSS */
+/* AFTER THIS YOUR CONTENT DON'T CHANGE ANYTHING */

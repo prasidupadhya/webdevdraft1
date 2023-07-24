@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comments.css">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <!--MAKE SURE TO ADD class="active" in the page that belongs to you--> 
+            <li><a href="home.html">Home</a></li>  <!--MAKE SURE TO NAME YOUR CODE home.html--> 
+            <li><a href="comments.html" class="active">Comments</a></li> <!--MAKE SURE TO NAME YOUR CODE comments.html--> 
+            <li><a href="shop.html">Shop</a></li> <!--MAKE SURE TO NAME YOUR CODE shop.html--> 
+            <li><a href="quiz.html">Quiz</a></li> <!--MAKE SURE TO NAME YOUR CODE quiz.html--> 
+            <li><a href="sitemap.html">Sitemap</a></li> <!--MAKE SURE TO NAME YOUR CODE sitemap.html-->
+            <li><a href="gallery.html">Gallery</a></li> <!--MAKE SURE TO NAME YOUR CODE gallery.html-->  
+            <li><a href="aboutus.html">About Us</a></li> <!--MAKE SURE TO NAME YOUR CODE aboutus.html--> 
+        </ul>
+    </nav>
+    <h1>Feedback Form</h1>
+    <p>Please share your experience using our website.</p>
+    <form id="feedback-form" action="your_server_side_script" method="post">
+        <label for="name">Name (required):</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error-message" id="name-error">Please enter your name.</span>
+
+        <label for="email">Email (required):</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-message" id="email-error">Please enter a valid email address.</span>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div id="thank-you" hidden>
+        <h2>Thank you for your feedback!</h2>
+    </div>
+    <script src="comments.js"></script>
+</body>
+</html>

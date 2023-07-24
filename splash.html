@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4;url=navigation.html"> <!-- Redirect to main.html after 4 seconds -->
+    <title>Text Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #534caf;
+            color: white;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="animated-text"></h1>
+    <script>
+        const textElement = document.getElementById('animated-text');
+        const text = "Welcome to Our Website!";
+        let currentIndex = 0;
+        let typingSpeed = 100; // Typing speed in milliseconds
+
+        function typeText() {
+            if (currentIndex < text.length) {
+                textElement.innerHTML += text.charAt(currentIndex);
+                currentIndex++;
+                setTimeout(typeText, typingSpeed);
+            }
+        }
+
+        typeText(); // Start the animation
+    </script>
+</body>
+</html>
